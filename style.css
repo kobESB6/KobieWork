@@ -1,0 +1,83 @@
+body{
+  
+    border-left-style: solid, solid;
+    background-color: rgba(27, 26, 26, 0.513);
+}
+
+
+  
+h1{
+    float: left;
+    text-align: top;
+    color: blue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20%
+
+}
+nav li{
+    display: flex;
+    display: inline-block;
+    overflow: hidden;
+  
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: blue;
+}
+
+h2, p{
+    text-align: left;
+    color: blue;
+}
+
+div {
+    width: 1000px;
+    border: 5px solid black;
+    padding: 75px;
+    margin: 20px;
+  }
+.prework{
+    text-align: left;
+    margin-left: 10px;
+    width: 100%;
+    padding: 0px, 0%;
+    align-items: center;
+}
+
+.project-hmwrkbox{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+
+}
+.project-hmwrkbox:hover .dark-overlay{
+    opacity: 0.5;
+
+
+}
+
+
+footer{ 
+    
+    text-align: center;
+    padding: 10px 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
