@@ -1,83 +1,189 @@
-body{
-  
-    border-left-style: solid, solid;
-    background-color: rgba(27, 26, 26, 0.513);
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-  
-h1{
-    float: left;
-    text-align: top;
+body {
+    font-family:Arial, sans-serif;
+    line-height: 1.6;
+    color: blue;
+    background-color: rgb(79, 86, 93);
+    padding: o 20px;
+}
+ 
+h1, h2, h3 {
     color: blue;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20%
 
-}
-nav li{
-    display: flex;
-    display: inline-block;
-    overflow: hidden;
-  
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
 }
 
-nav a{
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    display: flex;
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
-
-nav a:hover{
-    background-color: blue;
+.navbar ul {
+    list-style none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-h2, p{
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a:hover {
+    color:  gold;
+
+}
+.hero {
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+
+}
+
+.hero h2 {
+
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.about {
+    padding: 50px 0;
+    background-color: rgb(79, 86, 93);
     text-align: left;
-    color: blue;
 }
 
-/* div {
-    width: 1000px;
-    border: 5px solid black;
-    padding: 75px;
-    margin: 20px; */
-  /* } */
-.prework{
+.about p {
+    max-width: 600 px;
+    margin: 0 auto;
+    line-height: 1.8; 
+}
+/* prjects styling */
+.projects {
+   
+    background-color: rgb(79, 86, 93);
+    padding: 50px 0;
+   display: flex;
+    flex-wrap: wrap;
+}
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: left;
+}
+}
+
+.projects div p {
+    max-width: 300px;
     text-align: left;
     margin-left: 10px;
     width: 100%;
-    align-items: center;
-   border-bottom: 0.2em solid black;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.projectsbox{ 
-    width: 50%;
-    height: 50%;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    border: 0.2em solid black;
-
-
-}
-.projects::hover .dark-overlay{
-    opacity: 0.5;
-
-
-}
-
-
-footer{ 
-    
+footer {
+    background-color: blue;
+    color: white;
     text-align: center;
-    padding: 10px 20%;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar p {
+        display: inline-block;
+        justify-content: space-between;
+    }
+}
+/* project styling */
+.project {
+    border: 2px solid rgb(79, 86, 93);
+    padding: 20px;
+    margin:10px;
+    width: 45%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+   
+.project:hover {
+    transform: scale(1.05);  
+    /* Enlarge as project is hovered. */
+}
+
+.project:first-of-type {
+    width:100%;
+    border: 3px solid rgb(79, 86, 93); 
+
+}
+
+.project h3{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    max-width: 300px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .projects {
+       flex-direction: rows;
+       align-items: left;
+    }
+}
+
+/* first project AKA Prewok  full screen*/
+.first-project {
+    background-color: rgb(79, 86, 93);
+    color: white;
+    width: 100%;
+    border: 3px solid rgb(79, 86, 93);
+    padding: 20px 0;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20 px;
 
 }
