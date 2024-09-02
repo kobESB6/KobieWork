@@ -25,6 +25,7 @@ h1 {
 h2 {
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: left;
 }
 h3 {
     font-size: 1.5em;
@@ -37,18 +38,18 @@ header{
     padding: 20px 0;
     text-align: center;
 }
-.navbar ul {
+.navbar  {
     list-style none;
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
-.navbar ul li {
+.navbar p {
     margin: 0 15px;
 }
 
-.navbar ul li a:hover {
+.navbar p a:hover {
     color:  gold;
 
 }
@@ -80,7 +81,7 @@ header{
     margin: 0 auto;
     line-height: 1.8; 
 }
-/* prjects styling */
+/* projects styling */
 .projects {
    
     background-color: rgb(79, 86, 93);
@@ -112,24 +113,6 @@ header{
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .navbar p {
-        display: inline-block;
-        justify-content: space-between;
-    }
-}
 /* project styling */
 .project {
     border: 2px solid rgb(79, 86, 93);
@@ -155,35 +138,57 @@ footer p {
 .project h3{
     font-size: 1.8em;
     margin-bottom: 10px;
+
 }
 
 .project p {
-    max-width: 300px;
+    max-width: 250px;
     text-align: left;
-    margin: 0 auto;
 }
 
 .project img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    align-items: flex-start;
 }
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar p {
+        display: inline-block;
+        justify-content: space-between;
+    }
+}
+
 
 @media (max-width: 768px) {
     .projects {
        flex-direction: rows;
        align-items: left;
-    }
+    
 }
 
 /* first project AKA Prewok  full screen*/
 .first-project {
     background-color: rgb(79, 86, 93);
-    color: white;
-    width: 100%;
+    color: blue;
+    width: 70%;
     border: 3px solid rgb(79, 86, 93);
     padding: 20px 0;
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20 px;
 
+    }
 }
