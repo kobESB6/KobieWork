@@ -24,7 +24,7 @@ h1 {
     color:#fff;
     font-size: 2em;
     text-align: left;
-    margin-top: 20px;
+    padding: 20px 20px  20px 0px;
 }
 
 h2 {
@@ -40,29 +40,35 @@ h3 {
 header {
     background-color: blue;
     color: white;
-    padding: 20px ;
+    padding: 60px ;
     text-align: right; 
     justify-content: space-between;
 }
 
-.navbar p {
+header img{
+    float:  left;
+    width: 400px;
+    padding: 20px 75px 10px 10px;
+}
+.navbar ul{
     list-style: none;
-    display: inline-block;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     text-decoration: underline;
-    padding: 5px;
+    text-align: auto;
+    padding: 20px 0px;
 }
 
 .navbar  {
-    margin: 0 15px;
+    margin: 10px 0px;
 }
 
-.navbar p a {
+.navbar ul a {
     color: white;
-    text-decoration: none;
+    padding: 15px;
 }
 
-.navbar p a:hover {
+.navbar ul a:hover {
     color: gold;
 }
 
