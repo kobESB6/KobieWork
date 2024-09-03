@@ -1,144 +1,135 @@
+
+/* General Reset */
 * {
-    margin:  0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic Styling */
 body {
-    font-family:Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: blue;
     background-color: rgb(79, 86, 93);
-    padding: o 20px;
+    padding: 0 20px; /* Corrected 'o' to '0' */
 }
- 
+
 h1, h2, h3 {
     color: blue;
+    margin-bottom: 10px;
 }
 
 h1 {
+    color:#fff;
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 
 h2 {
     font-size: 2em;
-    margin-bottom: 10px;
     text-align: left;
 }
+
 h3 {
     font-size: 1.5em;
-    margin-bottom: 10px;
 }
 
-header{
+/* Header and Navigation */
+header {
     background-color: blue;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-.navbar  {
-    list-style none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+    padding: 20px ;
+    text-align: right; 
+    justify-content: space-between;
 }
 
 .navbar p {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.navbar  {
     margin: 0 15px;
 }
 
-.navbar p a:hover {
-    color:  gold;
-
+.navbar p a {
+    color: white;
+    text-decoration: none;
 }
+
+.navbar p a:hover {
+    color: gold;
+}
+
+/* Hero Section */
 .hero {
     color: #fff;
     padding: 100px 20px;
-    text-align: center;
-
+    text-align: left;
 }
 
 .hero h2 {
-
     font-size: 3em;
-    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.2em;
 }
 
+/* About Section */
 .about {
     padding: 50px 0;
     background-color: rgb(79, 86, 93);
     text-align: left;
+    margin-bottom: 2px;
 }
 
 .about p {
-    max-width: 600 px;
-    margin: 0 auto;
-    line-height: 1.8; 
+    max-width: 600px; /* Removed the space from '600 px' */
+    margin: 20 auto;
+    line-height: 1.8;
 }
-/* projects styling */
+
+/* Projects Section */
 .projects {
-   
     background-color: rgb(79, 86, 93);
     padding: 50px 0;
-   display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
+
 .projects h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
-.projects div {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    flex-direction: column;
-    align-items: left;
-}
-}
-
-.projects div p {
-    max-width: 300px;
-    text-align: left;
-    margin-left: 10px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* project styling */
 .project {
+    background-color :rgb(79, 86, 93);
     border: 2px solid rgb(79, 86, 93);
     padding: 20px;
-    margin:10px;
-    width: 45%; 
+    margin: 10px;
+    width: 45%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-
 }
-   
+
 .project:hover {
-    transform: scale(1.05);  
-    /* Enlarge as project is hovered. */
+    transform: scale(1.05);
 }
 
 .project:first-of-type {
-    width:100%;
-    border: 3px solid rgb(79, 86, 93); 
-
+    width: 100%;
+    border: 3px solid rgb(79, 86, 93);
+    margin-bottom: 20px;
 }
 
-.project h3{
+.project h3 {
     font-size: 1.8em;
-    margin-bottom: 10px;
-
 }
 
 .project p {
@@ -150,9 +141,22 @@ header{
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    align-items: flex-start;
 }
 
+/* Contact Section */
+.contact-me {
+    padding: 50px 0;
+    background-color: rgb(79, 86, 93);
+    text-align: center;
+    border-top:  3px solid rgb(79, 86, 93);
+}
+
+.contact-me p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
     background-color: blue;
     color: white;
@@ -165,30 +169,26 @@ footer p {
     margin: 0;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-    .navbar p {
-        display: inline-block;
-        justify-content: space-between;
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin: 20px 0;
     }
 }
 
-
-@media (max-width: 768px) {
-    .projects {
-       flex-direction: rows;
-       align-items: left;
-    
-}
-
-/* first project AKA Prewok  full screen*/
+/* First Project (Prework) Styling */
 .first-project {
     background-color: rgb(79, 86, 93);
     color: blue;
     width: 70%;
     border: 3px solid rgb(79, 86, 93);
     padding: 20px 0;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20 px;
-
-    }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Removed the extra space */
 }
+
