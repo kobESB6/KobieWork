@@ -144,9 +144,8 @@ header img{
 }
 
 .project img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    max-width: 634px;
+    max-height: 362px;
 }
 
 /* Contact Section */
