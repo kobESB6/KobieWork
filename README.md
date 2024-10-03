@@ -1,6 +1,11 @@
 ### KobieWork Porfolio
+
 ## Screenshot
 ![Portfolio Screentshot](./assets/images/proScreenshot%20.png)
+
+
+## Link
+[Link Text] (https://kobesb6.github.io/KobieWork/)
 
 ## Description
 This is a professional portfolio website showcasing my skill and work samples as a web developer.
